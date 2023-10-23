@@ -1,11 +1,10 @@
-//这是第二次提交
 package Git;
 
 import java.util.Scanner;
 
 public class GitText {
 
-
+//加密第一步，将字符串的每个字符转化为ASCII值并进行加值操作
     public static char[] encryptFirst(char []nums){
 
 
@@ -19,6 +18,7 @@ public class GitText {
         }
         return nums;
     }
+ //第二步，将字符串中的第一位和最后一位互换位置
     public static char[] encryptSecond(char[] nums2){
         char i=' ';
         int length=nums2.length;
@@ -27,6 +27,7 @@ public class GitText {
         nums2[length-1]=i;
         return nums2;
     }
+ 
     public static boolean judgeNum(char[]nums3){
         boolean flag=true;
         for(char i:nums3){
@@ -106,7 +107,7 @@ public class GitText {
                         Scanner scanner1=new Scanner(System.in);
                         String s = scanner1.nextLine();
                         char[] chars1 = encryptSecond(encryptFirst( s.toCharArray()));
-                        String s2 = String.valueOf(chars1);
+                        String s2 = String.valueOf(chars1);//反转字符串
                         StringBuffer stringBuffer=new StringBuffer(s2);
                         String s3 = stringBuffer.reverse().toString();
                         System.out.println("加密后的结果是:"+s3);
