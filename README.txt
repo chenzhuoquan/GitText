@@ -1,4 +1,3 @@
-//hello1；
 package Git;
 
 import java.util.Scanner;
