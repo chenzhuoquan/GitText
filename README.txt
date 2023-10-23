@@ -1,4 +1,4 @@
-//这是一行注释--新添加
+//hello
 package Git;
 
 import java.util.Scanner;
