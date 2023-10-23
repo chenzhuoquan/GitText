@@ -1,4 +1,3 @@
-//进行了一次提交并撤销操作
 package Git;
 
 import java.util.Scanner;
